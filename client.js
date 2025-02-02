@@ -336,8 +336,8 @@ async function initializeCall() {
       socket = io('http://localhost:3000');
       socket.emit('join-room', roomId, userId);
 
-      // Hide room controls and show video controls
-      document.querySelector('.room-controls').style.display = 'none';
+      // DO NOT Hide room controls and show video controls
+      // document.querySelector('.room-controls').style.display = 'none';
       document.querySelector('.video-grid').style.display = 'grid';
       document.querySelector('.controls').style.display = 'flex';
 
